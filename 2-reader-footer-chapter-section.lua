@@ -237,7 +237,7 @@ if footerTextGeneratorMap then
 		if not title or title == "" then
 			return ""
 		end
-		local max_pct = math.max((footer.settings and footer.settings.book_chapter_max_width_pct) or 30, 40)
+		local max_pct = math.max((footer.settings and footer.settings.book_chapter_max_width_pct) or 30, 80)
 		if footer.getFittedText then
 			return footer:getFittedText(title, max_pct)
 		end
