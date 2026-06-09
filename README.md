@@ -4,6 +4,11 @@ These are the user patches I use daily on my own [KOReader](https://github.com/k
 Feel free to use, copy or change them.
 Install steps are here: [how to install user patches](https://koreader.rocks/user_guide/#L2-userpatches).
 
+Helper script: `./deploy-patches.sh <host> [port]` uses SSH/SCP to copy all local `.lua` patches.
+
+> [!WARNING]
+> This script removes the current files in `/mnt/onboard/.adds/koreader/patches` on the target before copying.
+
 > [!NOTE]
 > Patches that start with 2-pt- only work with the [Project: Title](https://github.com/joshuacant/ProjectTitle) plugin.
 
